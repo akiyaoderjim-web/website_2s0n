@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="ru"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="page_title_programs">Специальности - Урта-Чирчикский Техникум №2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/placeholder_logo.png" alt="College Logo" class="college-logo">
+                    <span class="logo-text" data-lang-key="college_short_name">PTC No.2</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-lang-key="nav_home">Home</a></li>
+                    <li><a href="about.html" data-lang-key="nav_about">About College</a></li>
+                    <li><a href="applicants.html" data-lang-key="nav_applicants">Applicants</a></li>
+                    <li><a href="programs.html" class="active" data-lang-key="nav_programs">Programs</a></li>
+                    <li><a href="student_life.html" data-lang-key="nav_student_life">Student Life</a></li>
+                    <li><a href="contacts.html" data-lang-key="nav_contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <select id="language-switcher-select">
+                    <option value="uz" data-flag="img/uz.svg">O'zbekcha</option>
+                    <option value="ru" data-flag="img/ru.svg">Русский</option>
+                    <option value="en" data-flag="img/en.svg">English</option>
+                </select>
+                <img id="selected-flag" src="img/ru.svg" alt="Selected language flag">
+            </div>
+            <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="hamburger-menu" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero-section programs-hero" style="background-image: url('img/programs_hero.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="container page-hero-content">
+                <h1 class="page-title" data-lang-key="programs_page_title">Специальности</h1>
+            </div>
+        </section>
+
+        <section class="section-content container">
+            <h2 class="section-subtitle" data-lang-key="programs_intro_title" data-anim="rotate-in-x">Наши образовательные программы</h2>
+            <p data-lang-key="programs_intro_text" data-anim="tilt-rise" data-delay="1">
+                Урта-Чирчикский районный Техникум №2 предлагает широкий спектр востребованных специальностей, направленных на подготовку квалифицированных специалистов для различных секторов экономики. Мы постоянно обновляем наши учебные планы, чтобы соответствовать современным требованиям рынка труда.
+            </p>
+
+            <div class="programs-grid">
+                <div class="program-card" data-anim="cube-drop" data-delay="1">
+                    <img src="img/specialty_it.jpg" alt="Специальность IT" class="program-img">
+                    <div class="program-info">
+                        <h3 class="program-title" data-lang-key="program_it_title">Информационные технологии</h3>
+                        <p class="program-description" data-lang-key="program_it_desc">
+                            Подготовка специалистов по разработке программного обеспечения, сетевому администрированию и кибербезопасности.
+                        </p>
+                        <ul class="program-features">
+                            <li data-lang-key="it_feature1">Современные языки программирования.</li>
+                            <li data-lang-key="it_feature2">Практические проекты и стажировки.</li>
+                            <li data-lang-key="it_feature3">Актуальные тренды в IT-индустрии.</li>
+                        </ul>
+                        <a href="applicants.html" class="btn btn-secondary" data-lang-key="program_learn_more">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-anim="rotate-in-y" data-delay="2">
+                    <img src="img/specialty_auto.jpg" alt="Специальность Автомобильное дело" class="program-img">
+                    <div class="program-info">
+                        <h3 class="program-title" data-lang-key="program_auto_title">Автомобильное дело</h3>
+                        <p class="program-description" data-lang-key="program_auto_desc">
+                            Обучение диагностике, ремонту и техническому обслуживанию современных автомобилей.
+                        </p>
+                        <ul class="program-features">
+                            <li data-lang-key="auto_feature1">Работа с современным оборудованием.</li>
+                            <li data-lang-key="auto_feature2">Практика в автосервисах.</li>
+                            <li data-lang-key="auto_feature3">Изучение электроники автомобилей.</li>
+                        </ul>
+                        <a href="applicants.html" class="btn btn-secondary" data-lang-key="program_learn_more">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-anim="spin-in" data-delay="3">
+                    <img src="img/specialty_electrician.jpg" alt="Специальность Электротехника" class="program-img">
+                    <div class="program-info">
+                        <h3 class="program-title" data-lang-key="program_electrician_title">Электротехника</h3>
+                        <p class="program-description" data-lang-key="program_electrician_desc">
+                            Подготовка специалистов по монтажу, эксплуатации и ремонту электрического оборудования.
+                        </p>
+                        <ul class="program-features">
+                            <li data-lang-key="electrician_feature1">Навыки работы с электросетями.</li>
+                            <li data-lang-key="electrician_feature2">Основы промышленной автоматизации.</li>
+                            <li data-lang-key="electrician_feature3">Безопасность электромонтажных работ.</li>
+                        </ul>
+                        <a href="applicants.html" class="btn btn-secondary" data-lang-key="program_learn_more">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-anim="swivel" data-delay="4">
+                    <img src="img/specialty_accounting.jpg" alt="Специальность Бухгалтерский учет" class="program-img">
+                    <div class="program-info">
+                        <h3 class="program-title" data-lang-key="program_accounting_title">Бухгалтерский учет</h3>
+                        <p class="program-description" data-lang-key="program_accounting_desc">
+                            Обучение основам финансового учета, аудита и налогообложения.
+                        </p>
+                        <ul class="program-features">
+                            <li data-lang-key="accounting_feature1">Работа с 1С:Бухгалтерия.</li>
+                            <li data-lang-key="accounting_feature2">Анализ финансовой деятельности.</li>
+                            <li data-lang-key="accounting_feature3">Подготовка финансовой отчетности.</li>
+                        </ul>
+                        <a href="applicants.html" class="btn btn-secondary" data-lang-key="program_learn_more">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+            <p class="all-programs-link" data-lang-key="all_programs_cta">
+                <a href="contacts.html" data-lang-key="all_programs_text">
+                    Полный список специальностей и подробную информацию о каждой программе можно получить в приёмной комиссии или связавшись с нами.
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col about-col">
+                <h3 data-lang-key="footer_about_title">О колледже</h3>
+                <p data-lang-key="footer_about_text">
+                    Урта-Чирчикский районный Техникум №2 предлагает качественное профессиональное образование по востребованным специальностям. Мы готовим специалистов, готовых к вызовам современного рынка труда.
+                </p>
+            </div>
+            <div class="footer-col links-col">
+                <h3 data-lang-key="footer_links_title">Полезные ссылки</h3>
+                <ul>
+                    <li><a href="applicants.html" data-lang-key="footer_link_applicants">Абитуриенту</a></li>
+                    <li><a href="programs.html" data-lang-key="footer_link_programs">Специальности</a></li>
+                    <li><a href="student_life.html" data-lang-key="footer_link_student_life">Студенческая жизнь</a></li>
+                    <li><a href="contacts.html" data-lang-key="footer_link_contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3 data-lang-key="footer_contact_title">Контакты</h3>
+                <p data-lang-key="footer_address">Manzil: Toshkent viloyati, O'rta-Chirchiq tumani, Xalqobod MFY, Ibn Sino ko'chasi, 17-uy</p>
+                <p data-lang-key="footer_phone">Телефон: (Укажите телефон)</p>
+                <p data-lang-key="footer_email">Email: ortachirchiqtuman2sonpolitex@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://t.me/Politexnikum2sonli" target="_blank" aria-label="Telegram">
+                        <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.62 12c-.88-.24-.88-1.37.2-1.64l16.14-5.7c.75-.27 1.45.16 1.18 1.31l-2.45 11.46c-.24.98-1 1.25-1.73.78l-4.52-3.32-2.13 2.05c-.21.21-.39.39-.7.39z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/urtachirchiq_2_son_texnikum?igsh=cGlnMWNzNDA4anpl&utm_source=qr" target="_blank" aria-label="Instagram">
+                        <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 011.153 1.772c.248.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122s-.013 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772 4.915 4.915 0 01-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06s-3.056-.013-4.122-.06c-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12s.013-3.056.06-4.122c.05-1.065.218-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.902 4.902 0 013.825.925c.637-.248 1.363-.415 2.428-.465C7.32 2.013 7.66 2 8.878 2H12zm0 1.8c-2.649 0-2.984.01-4.04.057-1.037.046-1.66.21-2.122.422-.516.223-.91.48-1.304.874-.4.393-.66.787-.875 1.303-.21.463-.375 1.086-.422 2.123-.046 1.056-.057 1.396-.057 4.04s.01 2.984.057 4.04c.047 1.037.21 1.66.422 2.122.223.516.48.91.874 1.304.393.4.787.66 1.303.875.463.21 1.086.375 2.123.422 1.056.046 1.396.057 4.04.057s2.984-.01 4.04-.057c1.037-.047 1.66-.21 2.122-.422.516-.223.91-.48 1.304-.874.4-.393.66-.787.875-1.303.21-.463.375-1.086.422-2.123.046-1.056.057-1.396.057-4.04s-.01-2.984-.057-4.04c-.047-1.037-.21-1.66-.422-2.122-.223-.516-.48-.91-.874-1.304-.393-.4-.787-.66-1.303-.875-.463-.21-1.086-.375-2.123-.422C15.016 3.81 14.649 3.8 12 3.8zm0 3.62c-2.42 0-4.38 1.96-4.38 4.38s1.96 4.38 4.38 4.38 4.38-1.96 4.38-4.38-1.96-4.38-4.38-4.38zm0 7.16c-1.526 0-2.78-1.254-2.78-2.78s1.254-2.78 2.78-2.78 2.78 1.254 2.78 2.78-1.254 2.78-2.78 2.78zM18.428 5.4a1.58 1.58 0 100 3.16 1.58 1.58 0 000-3.16z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/share/p/1Fb3sjfM2D/" target="_blank" aria-label="Facebook">
+                        <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h7.58v-6.96h-2.34V11.22h2.34V9.27c0-2.32 1.42-3.58 3.48-3.58.98 0 1.82.07 2.06.1v2.33h-1.38c-1.13 0-1.35.54-1.35 1.32v1.73h2.59l-.34 2.84h-2.25V21H19c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-lang-key="footer_copyright">&copy; 2025 Урта-Чирчикский районный Техникум №2. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/form_handler.js"></script>
+
+</body>
+</html>
